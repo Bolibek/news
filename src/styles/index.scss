@@ -1,0 +1,37 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100vh;
+  overflow: scroll;
+  background: url("../assets/bridge.jpg") center / cover no-repeat;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 600px 500px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 50px;
+  &__page{
+    padding-left: 40px;
+    margin-top: 8px;
+  }
+}
+
+.hot{
+  background-color: rgb(223, 3, 131);
+}
+
+.sport{
+  background-color: rgb(2, 255, 87);
+}
+
+.policy{
+  background-color: rgb(3, 194, 241);
+}

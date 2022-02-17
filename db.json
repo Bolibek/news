@@ -1,0 +1,61 @@
+{
+  "news": [
+    {
+      "id": "56bb4b50-e2bd-4553-9f4b-bb3dd8741bc4",
+      "name": "Following fatal attack, Greece",
+      "description": "The murder of a young football fan has led authorities in Greece to try and toughen the rules governing supporters' associations. Alkis Kambanos was stabbed and severely beaten by a gang of youths in the northern city of Thessaloniki last week.",
+      "category": "Hot News"
+    },
+    {
+      "id": "df037d1a-2c62-4088-bcbc-cb05543201ff",
+      "name": "Following fatal attack, Greece",
+      "description": "The murder of a young football fan has led authorities in Greece to try and toughen the rules governing supporters' associations. Alkis Kambanos was stabbed and severely beaten by a gang of youths in the northern city of Thessaloniki last week.",
+      "category": "Policy News"
+    },
+    {
+      "id": "2e66bbe7-628c-4c85-ac7d-88d57db9c864",
+      "name": "Following fatal attack, Greece",
+      "description": "The murder of a young football fan has led authorities in Greece to try and toughen the rules governing supporters' associations. Alkis Kambanos was stabbed and severely beaten by a gang of youths in the northern city of Thessaloniki last week.",
+      "category": "Sport News"
+    }
+  ],
+  "filters": [
+    {
+      "name": "All",
+      "label": "All",
+      "className": "btn btn-outline-dark"
+    },
+    {
+      "name": "Hot News",
+      "label": "Hot News",
+      "className": "btn btn-primary"
+    },
+    {
+      "name": "Sport News",
+      "label": "Sport News",
+      "className": "btn btn-success"
+    },
+    {
+      "name": "Policy News",
+      "label": "Policy News",
+      "className": "btn btn-danger"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
