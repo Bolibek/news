@@ -1,21 +1,18 @@
 import Navbar from "./components/Navbar";
 import NewsList from "./components/NewsList";
-import NewsFilter from "./components//NewsFilter";
-import AddNewsForm from "./components/AddNewsForm";
-
-function App() {
+import NewsAddForm from "./components/NewsAddForm";
+import NewsFilter from "./components/NewsFilter";
+export default function App() {
 	return (
-		<div className="App">
+		<div className="overflow-y-scroll h-[100vh] ">
 			<Navbar />
-			<div className="content">
+			<div className="content grid mx-auto my-0 pt-10">
 				<NewsList />
-				<div className="content__page">
-					<AddNewsForm />
-					<NewsFilter />
+				<div className="ml-10">
+					<NewsAddForm />
+				 	<NewsFilter />
 				</div>
 			</div>
 		</div>
 	);
 }
-
-export default App;

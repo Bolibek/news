@@ -1,36 +1,29 @@
-export default function NewsListItem({ name, description, category, onDelete}) {
+export default function NewsListItem({ name, description, category, removeNews }) {
 	let elementClassName;
 	switch (category) {
 		case "Hot News":
-			elementClassName = "bg-primary bg-gradient";
+			elementClassName = "bg-gradient-to-b from-green-500 ";
 			break;
 		case "Sport News":
-			elementClassName = "bg-success bg-gradient";
+			elementClassName = "bg-gradient-to-b from-blue-500 ";
 			break;
 		case "Policy News":
-			elementClassName = "bg-danger bg-gradient";
+			elementClassName = "bg-gradient-to-b from-red-500";
 			break;
 		default:
-			elementClassName = "bg-info bg-gradient";
+			elementClassName = "bg-gradient-to-b from-purple-500";
 	}
 
 	return (
-		<li
-			className={`card flex-row shadow-lg text-white my-2 ${elementClassName}`}
-		>
-			<div className="card-body">
-				<h3 className="card-title">{name}</h3>
-				<p className="card-text">{description}</p>
+		<li className={`flex flex-row my-4 rounded-lg ${elementClassName}`}>
+			<div className="flex flex-row p-4">
+				<div className="w-72 mr-2">
+					<div className="text-xl text-gray-100">{name}</div>
+					<div className="text-sm text-gray-900">{description}</div>
+				</div>
+				<div className="image w-24 h-20 mt-2"></div>
 			</div>
-			<img
-				src="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-				alt="News Img"
-				className="img-fluid w-25 d-inline"
-				style={{ objectFit: "cover" }}
-			/>
-			<span  className="position-absolute top-0 end-90 translate-middle badge border rounded-pill bg-light">
-				<button onClick={onDelete} type="button" className="btn-close" aria-label="Close" ></button>
-			</span>
+			<span className="-mt-1 -ml-3 text-2xl text-yellow-100 cursor-pointer" onClick={removeNews}>&times;</span>
 		</li>
 	);
 }

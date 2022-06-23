@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  background: url("./assets/bridge.jpg") center / cover no-repeat;
+}
+
+.content {
+	grid-template-columns: 650px 600px;
+  max-width: 1140px;
+}
+
+.image{
+	background: url("./assets/news.jpg") center / cover no-repeat;	
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
