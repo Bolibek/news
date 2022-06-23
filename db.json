@@ -29,26 +29,22 @@
     {
       "id": "c0a8f9f8-f8b9-4f8e-b8e0-f8b9f8b9f8b9",
       "name": "All",
-      "label": "All",
-      "className": "bg-gray-900 rounded-l-md"
+      "label": "All"
     },
     {
       "id": "c0a8f9f8-f8b9-4f8e-b8e0-f8b9f8b9f8b8",
       "name": "Hot News",
-      "label": "Hot News",
-      "className": "bg-green-500"
+      "label": "Hot News"
     },
     {
       "id": "c0a8f9f8-f8b9-4f8e-b8e0-f8b9f8b9f8b7",
       "name": "Sport News",
-      "label": "Sport News",
-      "className": "bg-blue-500"
+      "label": "Sport News"
     },
     {
       "id": "c0a8f9f8-f8b9-4f8e-b8e0-f8b9f8b9f8b6",
       "name": "Policy News",
-      "label": "Policy News",
-      "className": "bg-red-500 rounded-r-md"
+      "label": "Policy News"
     }
   ]
 }

@@ -6,7 +6,7 @@ import classNames from "classnames";
 import {
 	filterFetchedNews,
 	activeFilterChanged,
-	filtersArray
+	filtersArray,
 } from "../app/slices/filters";
 
 export default function NewsFilter() {
@@ -28,17 +28,22 @@ export default function NewsFilter() {
 		return <Error />;
 	}
 
-	const renderFilters = (arr = []) => {
+	const renderFilters = (arr) => {
 		if (arr.length === 0) {
 			return <h5 className="text-center mt-5">Filters doesn't found</h5>;
 		}
-		return arr.map(({ name, className, label }) => {
-			const btnClasses = classNames("py-2 px-2.5", className, {
+		return arr.map(({id, name, label }) => {
+      let bgColor = "";
+			name === "All" && (bgColor = "bg-gray-900 rounded-l-md");
+			name === "Hot News" && (bgColor = "bg-green-500");
+			name === "Sport News" && (bgColor = "bg-blue-500");
+			name === "Policy News" && (bgColor = "bg-red-500 rounded-r-md");
+			const btnClasses = classNames(`py-2 px-2.5 ${bgColor}` , {
 				active: name === activeFilter,
 			});
 			return (
 				<button
-					key={name}
+					key={id}
 					id={name}
 					className={btnClasses}
 					onClick={() => dispatch(activeFilterChanged(name))}
